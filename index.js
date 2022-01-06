@@ -1,9 +1,10 @@
+require('dotenv').config();
 const Mongoose = require('mongoose');
 const { execMap } = require('nodemon/lib/config/defaults');
 const run = require('nodemon/lib/monitor/run');
 const person = require('./person');
 
-Mongoose.connect('mongodb://localhost/contact', { useNewUrlParser: true, useUnifiedTopology: true }, () =>
+Mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true }, () =>
 	console.log('connected')
 );
 
