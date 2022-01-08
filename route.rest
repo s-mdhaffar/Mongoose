@@ -1,0 +1,29 @@
+
+GET HTTP://localhost:5000/
+
+
+###
+
+GET HTTP://localhost:5000/61d9a4d2da27d84548e8a9ba
+
+###
+
+POST HTTP://localhost:5000/
+Content-Type: application/json
+
+{
+    "name":"Sami",
+    "email":"s.mdhaffar@gmail.com"
+}
+
+###
+PATCH HTTP://localhost:5000/61d9a4d2da27d84548e8a9ba
+Content-Type: application/json
+
+{
+    "name":"Omar"
+}
+
+###
+
+DELETE HTTP://localhost:5000/61d9a4b3da27d84548e8a9b7
